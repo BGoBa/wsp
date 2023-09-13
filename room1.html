@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<script>
-    function goFullscreen() {
-        const elem = document.documentElement; // この場合、全体のページを全画面表示にする
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) { /* Firefox */
-            elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE/Edge */
-            elem.msRequestFullscreen();
-        }
-    }
-</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,8 +40,6 @@
         <h1>会議室Ａ</h1>
         <p>15:00-16:30</p>
         <p>当社担当者：小林</p>
-        <!-- ユーザーがクリックすると全画面表示になるボタンを追加 -->
-        <button onclick="goFullscreen()">全画面表示</button>
     </div>
 </body>
 </html>
